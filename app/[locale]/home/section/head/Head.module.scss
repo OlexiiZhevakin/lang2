@@ -1,0 +1,45 @@
+
+
+.head {
+  position: relative;
+  min-height: calc(100vh - 84px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.subtitle{
+  color: var(--white);
+  font-size: 42px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Добавьте свои стили для ноутбуков и настольных компьютеров */
+  .subtitle{
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Добавьте свои стили для планшетов и небольших ноутбуков */
+  .subtitle {
+    font-size: 26px;
+  }
+}
+
+@media(max-width: 767px) {
+  /* Добавьте свои стили для мобильных устройств и планшетов */
+  .subtitle {
+    font-size: 20px;
+  }
+}
